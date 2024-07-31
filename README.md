@@ -1,4 +1,4 @@
- Hello World Go Application with Kubernetes
+Go Application with Kubernetes
 
 This is a simple  web application written in Go that returns timestamp and hostname as metrics, containerized with Docker, and deployed using Kubernetes. The project uses Helm for Kubernetes deployments and GitHub Actions for CI/CD.
 
