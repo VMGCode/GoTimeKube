@@ -1,6 +1,6 @@
  Hello World Go Application with Kubernetes
 
-This is a simple "Hello World" web application written in Go, containerized with Docker, and deployed using Kubernetes. The project uses Helm for Kubernetes deployments and GitHub Actions for CI/CD.
+This is a simple  web application written in Go that returns timestamp and hostname as metrics, containerized with Docker, and deployed using Kubernetes. The project uses Helm for Kubernetes deployments and GitHub Actions for CI/CD.
 
 ## Prerequisites
 
@@ -22,8 +22,8 @@ Ensure you have the following tools installed:
 Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/your-username/hello-world-go-k8s.git
-cd hello-world-go-k8s
+git clone https://github.com/VMGCode/GoTimeKube.git
+cd GoTimeKube
 ```
 ### 2. Initialize Go Module
 Navigate to the app directory and initialize the Go module:
@@ -93,7 +93,7 @@ kubectl config use-context <your-eks-cluster-context>
 Deploy the application using Helm:
 
 ```sh
-helm upgrade --install hello-world-go helm/ --set image.repository=your-docker-username/hello-world-go --set image.tag=latest
+helm upgrade --install hello-world-go helm/ --set image.repository=bbweareark/hello-world-go --set image.tag=latest
 ```
 Verify the deployment:
 
